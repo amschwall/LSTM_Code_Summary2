@@ -1,0 +1,1000 @@
+gets the branch offset of this instruction
+returns whether the target offset is known
+makes this instance immutable
+checks to see whether or not this instance is immutable
+checks to see whether or not this instance is mutable
+throws { immutable
+gets the method as it appears at the call site of the original invoke-virtual instruction
+gets the method to be invoked
+gets the call site prototype
+gets the number of primary arguments
+gets the width of the arguments (where a category-2 value counts as two)
+gets the {
+gets the type auxiliary argument
+gets the {
+gets the constant auxiliary argument
+gets the branch target auxiliary argument
+gets the switch cases auxiliary argument
+gets the init values auxiliary argument
+gets the last local index accessed
+gets whether the loaded local has info in the local variable table
+gets the target local register spec of the current operation, if any
+clears the results
+sets the results list to be the given single value
+adds an additional element to the list of results
+gets the count of results
+gets the width of the results (where a category-2 value counts as two)
+gets the {
+stores the results of the latest operation into the given frame
+throws an exception that indicates a mismatch in local variable types
+returns an instance which is the concatenation of the two given instances
+returns an instance which is the result of merging the two given instances, where one instance should have only type descriptors and the other only type signatures
+gets the indicated item
+sets the item at the given index
+sets the item at the given index
+gets the local variable information in this instance which matches the given { in all respects but the type descriptor and signature, if any
+gets the local variable information associated with a given address and local index, if any
+gets the start pc of this variable's scope
+gets the length (in bytecodes) of this variable's scope
+gets the variable's type descriptor
+gets the variable's localitem, a (name, signature) tuple
+gets the variable's type signature
+gets the variable's local index
+gets the variable's type descriptor
+constructs and returns an instance which is identical to this one, except that the signature is changed to the given value
+gets whether this instance matches (describes) the given address and index
+gets whether this instance matches (describes) the given other instance exactly in all fields except type descriptor and type signature
+makes a move instruction, appropriate and ideal for the given arguments
+gets whether the address of this instruction is known
+gets the output address of this instruction, if it is known
+gets the opcode
+gets the source position
+gets the register list for this instruction
+returns whether this instance's opcode uses a result register
+gets the minimum distinct registers required for this instruction
+gets the instruction that is equivalent to this one, except that it uses sequential registers starting at { the result, if any, in register {
+gets the instruction prefix required, if any, to use in an expanded version of this instance
+gets the instruction suffix required, if any, to use in an expanded version of this instance
+gets the instruction that is equivalent to this one, except that it replaces incompatible registers with sequential registers starting at { { { surrounding the result of a call to this method are the expanded transformation of this instance, and it is guaranteed that the number of low registers used will be the number returned by {
+gets the short identifier for this instruction
+returns the string form of this instance suitable for inclusion in a human-oriented listing dump
+sets the output address
+gets the address immediately after this instance
+returns an instance that is just like this one, except that the register list is mapped by using {
+helper for { form of this instance suitable for inclusion in a human-oriented listing dump, not including the instruction address and without respect for any output formatting
+helper which returns the string form of the associated constants for inclusion in a human oriented listing dump
+helper which returns the comment form of the associated constants for inclusion in a human oriented listing dump
+returns a list of classes to keep
+keep classes annotated with runtime annotations
+gets the dex file magic number corresponding to this instance
+checks whether an api feature is supported
+get the underlying annotation
+processes based on configuration specified in constructor
+inspects a class annotation
+inspects a package annotation
+prints, or schedules for printing, elements related to a matching package
+prints, or schedules for printing, elements related to a matching class
+checks to see if a specified class name should be considered a match due to previous matches
+checks to see if a specified package should be considered a match due to previous matches
+<p>obtains an immutable pair of from two objects inferring the generic types
+<p>gets the key from this pair
+<p>gets the value from this pair
+<p>compares the pair based on the left element followed by the right element
+<p>compares this pair to another based on the two elements
+<p>returns a suitable hash code
+<p>returns a string representation of this pair using the format {
+<p>formats the receiver using the given format
+{ this compares in class-major and value-minor order
+process a method with the dead-code remver
+runs the dead code remover
+removes all instructions from every unreachable block
+returns true if the only uses of this register form a circle of operations with no side effects
+returns true if this insn has a side-effect
+constructs an immutable instance which is the combination of the two given instances
+gets the element at the given index
+sets the element at the given index
+make a new item
+compares two strings like string
+gets the instructions array
+gets the return opcode encountered, if any
+gets the return position, if known
+gets ready to start working on a new block
+gets whether { last instruction in the block is one of the ones that can throw
+gets whether the block just processed ended with a {
+gets the primary successor index
+gets how many extra blocks will be needed to represent the block currently being translated
+call to startblock() can throw
+the last call to {
+instruction if encountered since last call to startblock()
+helper for { instruction
+sets or updates the information about the return block
+called before the invocation of the method
+called after the invocation of the method
+returns the result of the method call
+modify the result of the method call
+returns the {@link throwable} thrown by the method, or {@code null}
+returns true if an exception was thrown by the method
+modify the exception thrown of the method call
+returns the result of the method call, or throws the throwable caused by it
+returns the method/constructor that has been hooked
+makes a { returning the given writer if it already happens to be the right class
+writes the contents of the given array
+writes the contents of the given array
+writes the contents of the given array
+writes the contents of the given array
+returns an instance of this class that represents the wrapper class corresponding to a given primitive type
+returns an interned instance of this class for the given type
+gets the underlying type (as opposed to the type corresponding to this instance as a constant, which is always {
+gets the type descriptor for this instance
+returns a human readable package name for this type, like "java
+wrap a regular { that monitors an entire tree of views
+returns a {@code localdate} to use with {@link searchquery
+save the current logs to disk
+delete all of the log files saved to disk
+show the activity over the lock-screen and wake up the device
+called when the drawer motion state changes
+set a simple drawable used for the left or right shadow
+set a simple drawable used for the left or right shadow
+set a color to use for the scrim that obscures primary content while a drawer is open
+set a listener to be notified of drawer events
+enable or disable interaction with all drawers
+enable or disable interaction with the given drawer
+enable or disable interaction with the given drawer
+check the lock mode of the drawer with the given gravity
+check the lock mode of the given drawer view
+sets the title of the drawer with the given gravity
+returns the title of the drawer with the given gravity
+resolve the shared state of all drawers from the component viewdraghelpers
+to the current layout direction
+relative value, it will be resolved according to the current layout direction
+simple gravity to string - only supports left and right for debugging output
+set a drawable to draw in the insets area for the status bar
+gets the drawable used to draw in the insets area for the status bar
+set a drawable to draw in the insets area for the status bar
+set a drawable to draw in the insets area for the status bar
+close all currently open drawer views by animating them out of view
+open the specified drawer view by animating it into view
+open the specified drawer by animating it out of view
+close the specified drawer view by animating it into view
+close the specified drawer by animating it out of view
+check if the given drawer view is currently in an open state
+check if the given drawer view is currently in an open state
+check if a given drawer view is currently visible on-screen
+check if a given drawer view is currently visible on-screen
+this should really be in accessibilitynodeinfocompat, but there unfortunately seem to be a few elements that are not easily cloneable using the underlying api
+attempt to launch the supplied { will display a simple message if none are available to handle it
+attempt to launch android's chooser for the supplied { packages before launching and will display a simple message if none are available to handle it
+queries on-device packages for a handler for the supplied {
+return true if action is applicable
+human-readable action name
+perform this action using the specified view
+starts {@code span} at the current position in the builder
+end the most recently pushed span at the current position in the builder
+create the final {@link charsequence}, popping any remaining spans
+populates a { in the mock service
+create a new instance of a view for the specified position
+bind the data for the specified {@code position} to the view
+create a new instance of a drop-down view for the specified position
+bind the data for the specified {@code position} to the drop-down view
+when image download error, then remove
+start auto cycle
+pause auto cycle
+set the duration between two slider changes
+stop the auto circle
+when paused cycle, this method can weak it up
+set viewpager transformer
+set the duration between two slider changes
+set a preset viewpager transformer by id
+set preset pagertransformer via the name of transforemer
+inject your custom animation into pagetransformer, you can know more details in { and you can see a example in {
+pretty much right? enjoy it
+set the visibility of the indicators
+get the { you can manipulate the properties of the indicator
+get the current item position
+get current slider
+remove the slider at the position
+remove all the sliders
+set current slider
+move to prev slide
+move to next slide
+when next item is coming to show, let's hide the description layout
+when next item show in viewpagerex, let's make an animation to show the description layout
+if you are using the default indicator, this method will help you to set the shape of indicator, there are two kind of shapes you can set, oval and rect
+set indicator style
+if you are using the default indicator , this method will help you to set the selected status and the unselected status color
+set the visibility of indicator
+clear self means unregister the dataset observer and remove all the child views(indicators)
+bind indicator with viewpagerex
+redraw the indicators
+since we used a adapter wrapper, so we can't getcount directly from wrapper
+the placeholder image when loading image from url or file
+determine whether remove the image which failed to download or load from file
+if you set errordisappear false, this will set a error placeholder image
+the description of a slider image
+set a url as a image that preparing to load
+set a file as a image that will to load
+lets users add a bundle of additional information
+set a slider image click listener
+when you want to implement your own slider view, please call this method in the end in `getview()` method
+the extended class have to implement getview(), which is called by the adapter, every extended class response to render their own view
+set a listener to get a message , if load error
+when you have some extra information, please put it in this bundle
+get the last instance set via setpicasso(), or null if no user provided instance was set
+provide a picasso instance to use when loading pictures, this is useful if you have a particular http cache you would like to share
+this method will be invoked when the current page is scrolled, either as part of a programmatically initiated smooth scroll or a user initiated touch scroll
+this method will be invoked when a new page becomes selected
+called when the scroll state changes
+apply a property transformation to the given page
+set a pageradapter that will supply views for this pager as needed
+retrieve the current adapter supplying pages
+set the currently selected page
+set the currently selected page
+add a listener that will be invoked whenever the page changes or is incrementally scrolled
+remove a listener that was added with addonpagechangelistener see {
+set a { the scroll position is changed
+set a separate onpagechangelistener for internal use by the support library
+returns the number of pages that will be retained to either side of the current page in the view hierarchy in an idle state
+set the number of pages that should be retained to either side of the current page in the view hierarchy in an idle state
+set the margin between pages
+return the margin between pages
+set a drawable that will be used to fill the margin between pages
+set a drawable that will be used to fill the margin between pages
+this method will be invoked when the current page is scrolled, either as part of a programmatically initiated smooth scroll or a user initiated touch scroll
+this can be synthetic for a missing middle page; the 'object' field can be null
+start a fake drag of the pager
+end a fake drag of the pager
+fake drag by an offset in pixels
+returns true if a fake drag is in progress
+tests scrollability within child views of v given a delta of dx
+you can call this function yourself to have the scroll view perform scrolling from a key event, just as if the event had been dispatched to it by the view hierarchy
+we only want the current page that is being shown to be focusable
+we only want the current page that is being shown to be touchable
+we only want the current page that is being shown to be focusable
+public int getrealcount() { return adapter
+public int getrealcount() { return adapter
+called each {
+if the position offset of a fragment is less than negative one or greater than one, returning true will set the visibility of the fragment to {
+indicates if the default animations of the view pager should be used
+called each {
+called each {
+gets the multipart http request body
+formats a text/plain field for a multipart http request
+formats a application/json field for a multipart http request
+formats a file field for a multipart http request
+formats a file field (potentially multiple files) for a multipart http request
+ends the serialization of the multipart http request
+gets the operation id defined for the operation
+gets http status codes for all expected (successful) responses from this operation
+resolve and update the builder with the expected response (successful response) body type, wire type and the return type for the proxy method
+check if the operation belongs to an operation group
+extension for configure on unexpected response exception types to builder
+gets the response content types defined for the operation
+gets the content type defined for the request
+create proxy methods for a request in an operation
+if the given { that returns mono&lt;response&lt;t&gt&gt; i
+if the given method has a flux&lt;bytebuffer&gt; parameter, create a method overload with binarydata parameter
+create equivalent sync proxy methods for the given async proxy methods
+gets the exception type for the given response representing operation error
+maps the error classtype to exception classtype
+gets the default http response exception type
+gets the examples defined for the operation
+check if the given async proxy method's return type is mono&lt;responsebase&lt;h, t&gt&gt;
+gets the global {
+gets the delimiter used to join a list of parameters
+gets the enum of the model
+sets the enum of the model
+gets the client name of the model
+sets the client name of the model
+gets the pageable of the model
+sets the pageable of the model
+gets the skip url encoding of the model
+sets the skip url encoding of the model
+gets the client flatten of the model
+sets the client flatten of the model
+gets the long-running operation of the model
+sets the long-running operation of the model
+gets the flattened of the model
+sets the flattened of the model
+gets the azure resource of the model
+sets the azure resource of the model
+gets the mutability of the model
+sets the mutability of the model
+gets the header collection prefix of the model
+sets the header collection prefix of the model
+gets the internal autorest anonymous schema of the model
+sets the internal autorest anonymous schema of the model
+gets the long-running operation options of the model
+sets the long-running operation options of the model
+gets the arm id details of the model
+sets the arm id details of the model
+gets the examples of the model
+sets the examples of the model
+gets the secret of the model
+sets the secret of the model
+gets the versioning added of the model
+sets the versioning added of the model
+get an unmodifiable view of the given list
+get an unmodifiable view of the given set
+get an unmodifiable view of the given map
+get an unmodifiable view of the given map, where the values are immutable lists
+convert wire type expression to client type expression
+convert client type expression to wire type expression
+convert client type expression to wire type expression
+convert client type expression to wire type expression
+convert example literal value in wire type, to literal value in client type
+gets the name of this enumvalue
+gets the value of this enumvalue
+gets the description of this enumvalue
+formats the given files by removing unused imports and applying eclipse code formatting
+formats the given files by removing unused imports and applying eclipse code formatting
+loads the eclipse formatter settings from the xml file
+reorders the imports in alphabetical ordering
+converts an { <p> this is done as { don't want
+converts an { <p> this is done as { don't want
+extension for writing spotless configuration
+extension for writing a "build" block, with array of "plugin" within
+write a "maven-compiler-plugin" block, for sdk not using com
+initialize the flattened property in flattening properties setter method
+get getter method visibility for the field property
+get the property reference referring to the local(field) flattened property
+we generate super setters in child class if all of below conditions are met: 1
+adds class level annotations such as xml root element, jsonflatten based on the configurations of the model
+adds fluent or immutable based on whether model has any setters
+adds serialization implementations to the class signature
+adds the property fields to a class
+get properties to generate as fields of the class
+adds the annotations for a model field
+adds a constructor parameter to the constructor signature builder
+adds a constructor parameter to the constructor signature builder
+adds a getter method
+adds a setter method
+extension for validation on parent model
+gets properties to validate in `validate()` method
+gets the property xml wrapper class name
+extension for validation on model
+extension for property getter method name
+extension for fluent list of client model property reference
+checks whether to generate constant "private final static byte[] empty_byte_array = new byte[0];"
+checks whether the serialization code is required for the model
+writes stream-style serialization logic for serializing to and deserializing from the serialization format that the model uses
+add json-merge-patch related flag and accessors
+gets the clientmodel instance from the name of the model
+gets a valid name for the given name
+gets a valid name for the given name
+the editor managing the state of the codecustomization
+the name of the file containing where the code for the codecustomization exists
+gets the description of the "output parameter" that is transmitted to the service, and {
+gets an immutable list of parameter mappings for {
+checks if there is any parameter mappings defined
+gets the mappings where it represents an optional sdk method argument
+checks if the transformation represents a group-by transformation in the spec
+gets the description of the group-by "input parameter" that sdk method takes
+gets the property within the group-by "input parameter" model, that gets flattened (read from the "input parameter") then send to the service
+for stream-style-serialization, we generate shadow properties for read-only properties that's not in constructor
+get the property reference referring to the local(field) flattened property
+whether the given model is subclass of managementerror, which needs special deserialization adaption
+write tojson() method
+serializes the properties of a model to json
+serializes a non-flattened, non-additional properties json property
+writes the serialization of a json property via the fieldserializationmethod
+helper function to get property getter statement
+helper method to serialize flattened properties in a model
+writes a super type's {
+gets the additionalproperty model property from this model or its superclass
+adds a static method to the class with the signature that handles reading the json string into the object type
+initializes the local variables needed to maintain what has been deserialized
+initializes the local variables needed to maintain what has been deserialized
+adds the while loop that handles reading the json object until it is fully consumed
+adds the while loop that handles reading the json object until it is fully consumed
+helper method to deserialize a container property (such as { for a { when {
+handles validating that all required properties have been found and creating the return type
+helper method for adding a base if condition or an else if condition
+writes a super type's {
+writes a terminal type's { <p> a terminal type is either a type without polymorphism or is the terminal type in a polymorphic hierarchy
+add types as inner
+remove types as inner
+truncate class name to avoid path too long
+gets the directory name for graalvm config
+gets the global {
+checks whether there is a file with the same name already generated
+gets the global {
+maps an {
+extension point of additional methods for lro
+gets the visibility for the client methods when generator configured to generate the wrapper clients
+creates overload client methods, on versioning with "
+extension for configuration on method visibility
+gets the context parameter
+adds a {
+gets all parameter transformations as a stream
+gets all parameter transformations as an immutable list
+checks if there are no transformations defined
+checks if there is a transformation defined for a parameter with the given name
+gets name of all parameters for which transformations defined
+checks if this transformation is a group-by transformation with the given parameter representing the grouped parameter that sdk method would take
+checks if the transformation represents a spread transformation with the given parameter as one of the spread-ed (flattened) parameter that sdk method takes
+gets the transformation mapping if the given parameter is an input parameter
+gets the title of what autorest is generation
+set the title of what autorest is generating
+gets the tag for what autorest is generating
+sets the tag for what autorest is generating
+gets the base folder for the generation
+sets the base folder for the generation
+gets the output folder for the generation
+sets the output folder for the generation
+gets the security settings for the generation
+sets the security settings for the generation
+gets the security scopes for the generation
+sets the security scopes for the generation
+gets the security header name for the generation
+sets the security header name for the generation
+gets the folder containing the java sdks for the generation
+sets the folder containing the java sdks for the generation
+gets the input files for the generation
+gets the required plugins for the generation
+sets the description of this externaldocumentation
+sets the url of this externaldocumentation
+format and write the message according to the {
+format and write the message according to the {
+check that the type can be regarded as a plain java
+gets the package name for builder and wrapper classes
+gets the list of client accessor methods
+gets the parent class
+sets the parent class
+add this property's imports to the provided set of imports
+sets the package that this service client belongs to
+sets the name of this client's class
+sets the name of this client's interface
+sets the rest api that this client will send requests to
+sets the methodgroupclients that belong to this serviceclient
+sets the properties of this serviceclient
+sets the constructors for this serviceclient
+sets the client method overloads for this serviceclient
+sets the azure environment parameter
+sets the serializer adapter parameter
+sets the default poll interval parameter
+sets the credentials parameter
+sets the httppipeline parameter
+sets the defaultcredentialscopes parameter
+sets the builderdisabled parameter
+sets the builderpackagename parameter
+sets the security configuration information
+sets the base url
+configures the httppipelinepolicy
+sets exception name
+sets error name
+sets package name
+sets parent exception itype
+returns whether the given convenience example should be included in the generated sample code
+gets the un-escaped query value
+@return the status code
+@return the http headers
+@return the response body
+@return the response body as json string
+heuristically find relative path of the original file to the repository
+identifier of the codesnippet label from codesnippet-maven-plugin href="https://github
+@return example name
+sets the camera up to take preview images which are used for both preview and decoding
+notifies the attached observers that the underlying data is no longer valid or available
+draw a bitmap with the result points highlighted instead of the live scanning display
+enable tinting of the system status bar
+enable tinting of the system navigation bar
+apply the specified color tint to all system ui bars
+apply the specified drawable or color resource to all system ui bars
+apply the specified drawable to all system ui bars
+apply the specified alpha to all system ui bars
+apply the specified color tint to the system status bar
+apply the specified drawable or color resource to the system status bar
+apply the specified drawable to the system status bar
+apply the specified alpha to the system status bar
+apply the specified color tint to the system navigation bar
+apply the specified drawable or color resource to the system navigation bar
+apply the specified drawable to the system navigation bar
+apply the specified alpha to the system navigation bar
+get the system bar configuration
+is tinting enabled for the system status bar?
+is tinting enabled for the system navigation bar?
+should a navigation bar appear at the bottom of the screen in the current device configuration? a navigation bar may appear on the right side of the screen in certain configurations
+get the height of the system status bar
+get the height of the action bar
+does this device have a system navigation bar?
+get the height of the system navigation bar
+get the width of the system navigation bar when it is placed vertically on the screen
+get the layout inset for any system ui that appears at the top of the screen
+get the layout inset for any system ui that appears at the bottom of the screen
+get the layout inset for any system ui that appears at the right of the screen
+initializes this static object with the context of the calling activity
+gets the cameramanager singleton instance
+closes the camera driver if still in use
+asks the camera hardware to begin drawing preview frames to the screen
+tells the camera to stop drawing preview frames
+a single preview frame will be returned to the handler supplied
+asks the camera hardware to perform an autofocus
+like { not ui / screen
+a factory method to build the appropriate luminancesource object based on the format of the preview buffers, as described by camera
+handler scan result
+change the checked state of the view
+change the checked state of the view to the inverse of its current state
+parse the color string, and return the corresponding color-int
+<p>encodes a 'command header' with the first 3 lsb as the command id, the remaining bits as the command length
+get the length component from the 'command header' integer
+get the id component from the 'command header' integer
+get the id component from the 'command header' integer, then find the {
+concatenate the given strings while performing various optimizations to slow the growth rate of tree depth and tree node count
+concatenates two strings by copying data values
+create a new ropebytestring for testing only while bypassing all the defenses of { testing trees of specific structure
+gets the byte at the given index
+determines if the tree is balanced according to bap95, which means the tree is flat-enough with respect to the bounds
+takes a substring of this one
+determines if this string is equal to another of the same length by iterating over the leaf nodes
+push a string on the balance stack (bap95)
+returns the next item and advances one {
+internal implementation of read and skip
+common initialization code used by both the constructor and reset()
+skips to the next piece if we have read all the data in the current piece
+returns the size of the list even if some of the elements might be null
+returns the size of not-null locations
+returns whether there are non-null elements in the list
+returns a new regionlocations with the locations removed (set to null) which have the destination server as given
+removes the given location from the list removed
+removes location of the given replicaid from the list removed
+set the element to null if its getservername method returns null
+merges this regionlocations list with the given list assuming same range, and keeping the most up to date version of the hregionlocation entries from either list according to seqnum
+updates the location with new only if the new location has a higher seqnum than the old one or force is true
+returns the region location from the list for matching regionname, which can be regionname or encodedregionname
+returns the first not-null region location in the list
+invokes admin#createnamespace and admin#createtable to create a namespace with a table that has one column-family
+invokes table#put to store a row (with two new columns created 'on the fly') into the table
+invokes table#get and prints out the contents of the retrieved row
+checks to see whether a namespace exists
+invokes table#delete to delete test data (i
+invokes admin#disabletable, admin#deletetable, and admin#deletenamespace to disable/delete table and delete namespace
+setup our cluster connection if not already initialized
+puts up the webui
+sets the abort state if not already set
+in order to register shutdownhook, this method is called when hmaster and hregionserver are started
+returns return table descriptors implementation
+returns return the rootdir
+returns return the walrootdir
+returns return the walfs
+returns true if the cluster is up
+returns time stamp in millis of when this server was started
+get namedqueue provider to add different logs to ringbuffer
+reload the configuration from disk
+check for lack of column
+check for equality
+check for match
+check for match
+specify a timerange
+enables the return of { <p> this is intended for advanced users who need result-granular, server-side metrics <p> does not work { {
+build the checkandmutate object
+build the checkandmutate object
+build the checkandmutate object with an increment to commit if the check succeeds
+build the checkandmutate object with an append to commit if the check succeeds
+build the checkandmutate object with a rowmutations to commit if the check succeeds
+returns a builder object to build a checkandmutate object
+returns the row
+returns the family to check
+returns the qualifier to check
+returns the comparison operator
+returns the expected value
+returns the filter to check
+returns whether this has a filter or not
+returns the time range to check
+returns the action done if check succeeds
+returns whether query metrics are enabled
+returns the filter serialized using pb
+parse a serialized representation of {
+return true if and only if the fields of the filter that are serialized are equal to the corresponding fields in other
+implement heapsize interface
+implement cloneable interface
+set the priority for this rpc request
+a little different from the basic rpccontroller: <ol> <li>you can register multiple callbacks to an { <li>the callback will not be called if the rpc call is finished without any cancellation
+if not cancelled, add the callback to cancellation callback list
+returns true if this controller is carrying the rpc target region's regioninfo
+returns target region's regioninfo or null if not available or pertinent
+returns region's table name or null if not available or pertinent
+get the directory to archive a store directory not be archived
+get the directory to archive a store directory not be archived
+gets the directory to archive a store directory
+gets the archive directory under specified root dir
+get the archive directory for a given region under the specified table should not be archived
+get the archive directory for a given region under the specified table the archive path) should not be archived
+get the path to the table archive directory based on the configured archive directory
+get the path to the table archive directory based on the configured archive directory
+get the full path to the archive directory on the configured { testing: requires a filesystem root directory to be specified
+get the full path to the archive directory on the configured { the archive path)
+get the full path to the archive directory on the configured { the archive path) private static path getarchivepath(final path rootdir) { return new path(rootdir, hconstants
+update the statistics for the specified region
+check if a given path is belongs to active wal directory
+reads bulk load records from backup table, iterates through the records and forms the paths for bulk loaded hfiles
+the column families for the last full backup
+verifies that the current table descriptor cfs matches the descriptor cfs of the last full backup for the tables
+initializes the datatieringmanager instance with the provided map of online regions, only if the configuration "hbase
+retrieves the instance of datatieringmanager
+determines whether data tiering is enabled for the given block cache key
+determines whether data tiering is enabled for the given hfile path
+determines whether the data associated with the given block cache key is considered hot
+determines whether the data associated with the given time range tracker is considered hot
+determines whether the data in the hfile being read is considered hot based on the configured data tiering type and hot data age
+returns a set of cold data filenames from the given set of cached blocks
+returns a set of cold data filenames from the given set of cached blocks
+it is possible for a task to stay in unassigned state indefinitely - say splitlogmanager wants to resubmit a task
+signal the workers that a task was resubmitted by creating the rescan node
+helper function to check whether to abandon retries in zookeeper asynccallback functions
+finish the partially done task
+temporary function that is used by unit tests only
+creates and returns a table instance from a given table name
+get group name
+adds the given server to the group
+adds the given servers to the group
+returns true if a server with hostport is found
+get list of servers
+remove given server from the group
+getter for fetching an unmodifiable {@link #configuration} map
+setter for storing a configuration setting in {
+remove a config setting represented by the key from the {@link #configuration} map
+get set of tables that are members of the group
+add a table the configuration of a table so this will be removed
+add a collection of tables the configuration of a table so this will be removed
+check if the group contains a table the configuration of a table so this will be removed
+remove a table the configuration of a table so this will be removed
+register the given { cacheable interface -- deserializer and generate a unique identifier id for it and return this as our result
+get the cacheable deserializer registered at the given identifier id
+snapshot a map of the current identifiers to class names for reconstruction on reading out of a file
+given the backup root dir, backup id and the table name, return the backup image location
+get backup temporary directory
+get backup tmp directory for backupid
+given the backup root dir, backup id and the table name, return the backup image location, which is also where the backup manifest file is
+returns true if <code>tn</code> is the hbase:meta table name
+check passed byte array, "tablename", is legal user-space table name
+qualifier names can only contain 'word' characters <code>[\p{isalphabetic}\p{digit}]</code> or '_', '
+valid namespace characters are alphabetic characters, numbers, and underscores
+ideally, getnameasstring should contain namespace within it, but if the namespace is default, it just returns the name
+returns a pointer to tablename as string bytes
+check that the object does not exist already
+it is used to create table names for old meta, and root table
+construct a tablename this
+construct a tablename
+construct a tablename
+construct a tablename this
+returns the configuration to be used by the authentication filter to initialize the authentication handler
+returns the filter serialized using pb
+parse a serialized representation of {
+returns true if and only if the fields of the filter that are serialized are equal to the corresponding fields in other
+update estimate quota(read/write size/capacityunits) which will be consumed
+update estimate quota(read/write size/capacityunits) which will be consumed scanner calls
+this method allows you to set an identifier on an operation
+this method allows you to retrieve the identifier for the operation if one was set
+record a single instance of a snapshot
+record a single instance of a snapshot
+record a single instance of a snapshot cloned table
+returns the list of fully cached files
+a helper to replicate a list of wal entries using region server admin configurations in the replication configuration directory
+create a new replicatewalentryrequest from a list of wal entries
+create a new replicatewalentryrequest from a list of wal entries configurations in the replication configuration directory
+returns <code>cells</code> packaged as a cellscanner
+sets the region/store name, for logging
+gets the total size of all storefiles in compaction
+gets the priority for the request
+sets the priority for the request
+specify if this compaction should be a major compaction based on the state of the store compaction
+recalculate the size of the compaction based on current files
+add the procedure to the queue
+fetch one procedure from the queue note: this method is called with the sched lock held
+returns the number of elements in this queue
+returns true if there are procedures available to process
+wake up all the given events
+wakes up given waiting procedures by pushing them back into scheduler queues
+default thread pool for the procedure
+default thread pool for the procedure
+shutdown the thread pools and release rpc resources
+submit an procedure to kick off its dependent subprocedures
+the connection to the rest of the procedure group (members and coordinator) has been broken/lost/failed
+abort the procedure with the given name
+exposed for hooking with unit tests
+kick off the named procedure currently only one procedure with the same type and name is allowed to run at a time
+notification that the procedure had the specified member acquired its part of the barrier via {
+notification that the procedure had another member finished executing its in-barrier subproc via {
+returns the procedure
+returns return set of all procedure names
+get the provider if it already initialized, otherwise just return { creating it
+get a thread pool for executing some asynchronous tasks
+turns value output on
+turns value output off
+turns json output on
+turns json output off, and turns on "pretty strings" for human consumption
+sets the region by which output will be filtered when nonnegative, serves as a filter; only log entries with this sequence id will be printed
+sets the tables filter
+sets the region by which output will be filtered when not null, serves as a filter; only log entries from this region will be printed
+sets the row key by which output will be filtered when not null, serves as a filter; only log entries from this row will be printed
+sets the rowprefix key prefix by which output will be filtered when not null, serves as a filter; only log entries with rows having this prefix will be printed
+option to print the row key only in case you just need the row keys from the wal
+sets the position to start seeking the wal file initial position to start seeking the given wal file
+enables output as a single, persistent list
+ends output of a single, persistent list
+returns string made of hostname and port formatted as per {
+returns the version number of a regionserver
+returns the string type version of a regionserver
+call directly from client such as hbase shell
+returns region load metrics
+returns metrics per user
+returns the region cache information for the regions hosted on this server rounded to mb
+populate encoded region name and server name details if not already populated
+returns the filter serialized using pb
+parse a serialized representation of {
+returns true if and only if the fields of the filter that are serialized are equal to the corresponding fields in other
+returns an hri parsed from this regionname
+returns the regioninfo object from the column { <code>qualifier</code> of the catalog table result
+returns regioninfo object from the column hconstants
+returns the hregionlocation parsed from the given meta row result for the given regioninfo and replicaid
+returns an hregionlocationlist extracted from the result
+returns a {
+returns the column qualifier for server column for replicaid
+returns the column qualifier for server start code column for replicaid
+the latest seqnum that the server writing to meta observed when opening the region
+returns the column qualifier for seqnum column for replicaid
+parses the replicaid from the server column qualifier
+returns the row key to use for this regioninfo
+returns the column qualifier for serialized region state
+returns the column qualifier for serialized region state
+decode table state from meta result
+returns deserialized values of &lt;qualifier,regioninfo&gt; pairs taken from column values that match the regex 'info:merge
+returns deserialized regioninfo values taken from column values that match the regex 'info:merge
+returns true if any merge regions present in <code>cells</code>; i
+returns true if the column in <code>cell</code> matches the regex 'info:merge
+calculates the timestamp boundary up to which all backup roots have already included the wal
+creates a pre-split table for load testing
+creates a pre-split table for load testing
+creates a pre-split table for load testing
+creates a pre-split table for load testing
+creates a pre-split table for load testing
+creates a pre-split table for load testing
+creates a pre-split table for load testing
+writes all table acls for the tables in the given map up into zookeeper znodes
+check the current user for authorization to perform a specific action against the given set of row data
+returns <code>true</code> if the current user is allowed the given action over at least one of the column qualifiers in the given column families
+determine if cell acls covered by the operation grant access
+********************************* observer/service getters **********************************
+********************************* observer implementations **********************************
+create the acl table
+table descriptor for acl table columnfamilydescriptor cfd = columnfamilydescriptorbuilder
+verify, when servicing an rpc, that the caller is the scanner owner
+verifies user has create or admin privileges on the column families involved in the bulkloadhfile request
+authorization check for securebulkloadprotocol
+authorization security check for securebulkloadprotocol
+authorization security check for securebulkloadprotocol
+returns the active user to which authorization checks should be applied
+see { methods
+see { { details on this methods
+override of getsplitpoint that determines the split point as the boundary between two stripes, unless it causes significant imbalance between split sides' sizes
+gets the total size of all files in the stripe
+checks whether the key indicates an open interval boundary (i
+checks whether the key is invalid (e
+compare two keys for equality
+compare two keys
+finds the stripe index by end row
+finds the stripe index for the stripe containing a row provided externally for get/scan
+inserts a file in the correct place (by seqnum) in a stripe copy
+returns a lazy l0 copy from current state
+process new files, and add them either to the structure of existing stripes, or to the list of new candidate stripes
+remove compacted files
+returns the rest gateway version
+returns the jvm vendor and version
+returns the os name, version, and hardware architecture
+returns the servlet container version
+returns the version of the embedded jersey framework
+returns the build version of the rest server component
+returns the source control revision of the rest server component
+public void setrevision(string revision) { this
+creates a block from an existing buffer starting with a header
+parse total on disk size including header and checksum
+present) read by peeking into the next block's header; use as a hint when doing a read of the next block when scanning or running over a file
+call { return back the {
+calling this method in strategic locations where hfileblocks are referenced may help diagnose potential buffer leaks
+returns get data block encoding id that was used to encode this block
+returns the on-disk size of header + data part + checksum
+returns the uncompressed size of data part (header and checksum excluded)
+rewinds { side-effect
+returns a buffer that does not include the header and checksum
+returns a read-only duplicate of the buffer this block stores internally ready to be read
+checks if the block is internally consistent, i
+retrieves the decompressed/decrypted view of this block
+always allocates a new buffer of the correct size
+return true when this block's buffer has been unpacked, false otherwise
+cannot be { when block is returned to the cache
+returns a byte stream reading the data(excluding header and checksum) of this block
+will be override by { by default
+starts writing into the block
+writes the cell to this block
+transitions the block writer from the "writing" state to the "block ready" state
+finish up writing of the block
+put the header into the given byte array at the given offset
+similar to { block so that it can be referenced in the next block of the same type
+writes the header and the compressed data of this block (or uncompressed data when not using compression) into the given stream
+returns the header or the compressed data (or uncompressed data when not using compression) as a byte array
+releases resources used by this writer
+returns the on-disk size of the data portion of the block
+returns the on-disk size of the block
+the uncompressed size of the block data
+the uncompressed size of the block data, including header size
+returns true if a block is being written
+returns the number of bytes written into the current block so far, or zero if not writing the block at the moment
+returns the number of bytes written into the current block so far, or zero if not writing the block at the moment
+clones the header followed by the uncompressed data, even if using compression
+clones the header followed by the on-disk (compressed/encoded/encrypted) data
+takes the given { writes the writable into this block, and flushes the block into the output stream
+creates a new hfileblock
+the type of block this data should use
+writes the block to the provided stream
+now we use the { must deallocate all of the bytebuffers in the end life
+creates a block iterator over the given portion of the { blocks starting with offset such that offset &lt;= startoffset &lt; endoffset
+get a decoder for {@link blocktype#encoded_data} blocks from this file
+get the default decoder for blocks from this file
+to close the stream's socket
+does a positional read or a seek and read into the given byte buffer
+reads a version 2 block (version 1 blocks not supported and not expected)
+check that checksumtype on { within the known value range
+check that { error
+check that { margin of error
+check atomic reference cache for this block's header
+save away the next blocks header in atomic reference
+clear the cached value when its integrity is suspect
+generates the checksum for the header as well as the data and then validates it
+an additional sanity-check in case no compression or encryption is being used
+for use by bucketcache
+adds metadata at current position (position is moved forward)
+returns the size of data on disk + header
+returns the size of this block header
+maps a minor version to the size of the header
+return the appropriate dummy_header for the minor version
+from which this block's data was originally read
+convert the contents of the block header into a human readable string
+creates a new hfileblockbuilder from the existing block and a new bytebuff
+returns opentelemetry attributes for a span that is reading a data block with relevant metadata
+gets the space usage and limit for each table
+gets the space usage and limit for each namespace
+check configuration change by comparing current loaded coprocessors with configuration values
+helper method to check if there are any coprocessors configured
+for compatible reason
+for compatible reason
+gets an entry from the cache
+gets a collection of entries from the cache, returning them as map of the values associated with the set of keys requested
+associates the specified value with the specified key in the cache
+copies all of the entries from the specified map to the cache
+atomically associates the specified key with the given value if it is not already associated with a value
+removes the mapping for a key from this cache if it is present
+removes entries for the specified keys
+provides a standard way to access the underlying concrete cache entry implementation in order to provide access to further, proprietary features
+use this cache to try run an action exclusively
+gets an entry from the cache
+gets a collection of entries from the cache
+if there is a value associated with the key, return the value; otherwise use the loader load the value and return, and then update the cache
+if there is a value associated with the key, return the value; otherwise use the loader load the value and return, and then update the cache
+if there is a value associated with the key, return the value; otherwise use the loader load the value and return, and then update the cache
+associates the specified value with the specified key in the cache
+associates the specified value with the specified key in the cache
+associates the specified value with the specified key in the cache
+copies all of the entries from the specified map to the cache
+copies all of the entries from the specified map to the cache
+copies all of the entries from the specified map to the cache
+removes entries for the specified keys
+if the specified key is not already associated with a value, associate it with the given value
+return the imports to use if the { <p>take care of adding the necessary jsr-107 import if it is available
+clear method not found in spring 4
+enable cache in current thread, for
+calculates the best place to position text
+creates a { to calculate where best to place the text
+called when the showcaseview has been told to hide
+called when the animation hiding the showcaseview has finished, and it is no longer visible on the screen
+called when the showcaseview is shown
+called when the user has touched on the showcaseview, but the touch was blocked
+draw the commands drawn to the canvas
+override the standard button click event
+create the {
+draw a holo-style showcase
+draw a new-style showcase
+draw a material style showcase
+set a custom showcase drawer which will be responsible for measuring and drawing the showcase
+set the title text shown on the showcaseview
+set the title text shown on the showcaseview
+set the descriptive text shown on the showcaseview
+set the descriptive text shown on the showcaseview
+set the target of the showcase
+set the style of the showcaseview
+set a listener which will override the button clicks
+don't make the showcaseview block touches on itself
+make this showcaseview hide when the user touches outside the showcased area
+set the showcaseview to only ever show once
+sets the paint that will draw the text as specified by { or { then this {
+sets the paint that will draw the text as specified by { or { then this {
+replace the end button with the one provided
+replace the end button with the one provided
+block any touch made on the showcaseview, even inside the showcase
+uses the android decor view to insert a showcase, this is not recommended as then ui elements in showcase view can hide behind the nav bar
+set whether the text should be centred in the screen, or left-aligned (which is the default)
+change the position of the showcaseview's button from the default bottom-right position
+sets the text alignment of the detail text
+sets the text alignment of the title text
+set the duration of the fading in and fading out of the showcaseview
+return the view which represents the spinner on the actionbar, or null if there isn't one
+return the view which represents the title on the actionbar, or null if there isn't one
+return the view which represents the overflow action item on the actionbar, or null if there isn't one
+return the view which represents the mediarouterbutton action item on the actionbar, or null if there isn't one
+finds and builds all possible { from the currently-attached { not require permission from the android usb system, since it does not open any of the devices
+probes a single device for a compatible driver
+returns the device serial number
+sets the size of the internal buffer used to exchange data with the usb stack for write operations
+use simple usb request supported by all devices to test if connection is still valid
+emulate external xon/off
+purge non-transmitted output data and / or non-read input data
+adds or updates a (vendor, product) pair in the table
+internal method to add all supported products from {
+returns the driver for the given usb device, or {
+called when {
+read/write buffer size
+set read queue, similar to { except buffer size to be set before with { disable with value 0
+write data asynchronously
+start serialinputoutputmanager in separate threads
+stop serialinputoutputmanager threads when using readtimeout == 0 (default), additionally use usbserialport
+notify listener of an error
+set the thread priority
+continuously services the read buffers until { raised
+continuously services the write buffers until { raised
+accepts any separator, e
+filter xon/xoff from read() data and remember
+returns the items
+appends the specified element to the end of the {
+adds the objects in the specified collection to the end of this list
+returns the {
+returns the root {
+returns the {
+alternative to { this adapter will be bound to
+helper function if you want to force notifydatasetchanged()
+returns the position within the adapter's dataset for the view, where view is an adapter item or a descendant of an adapter item
+returns the position within the adapter's dataset for the view, where view is an adapter item or a descendant of an adapter item
+returns the {
+returns the {
+swaps the item on the first adapter position with the item on the second adapter position
+will be called to insert given {
+merges given animators into one array
+call this method to reset animation status on all views
+set the starting position for which items should animate
+set the starting position for which items should animate as the first position which isn't currently visible on screen
+sets the value of the last animated position
+sets the delay in milliseconds before the first animation should start
+sets the delay in milliseconds before an animation of a view should start
+sets the duration of the animation in milliseconds
+enables animating the views
+disables animating the views
+cancels any existing animations for given view
+animates given view if necessary
+animates given view
+returns the delay in milliseconds after which animation for view with position mlastanimatedposition + 1 should start
+returns a parcelable object containing the animationadapter's current dynamic state
+restores this animationadapter's state
+get the { {
+sets whether this instance is wrapped by another instance of animationadapter
+call this method to reset animation status on all views
+returns the {
+animates given view if necessary
+returns the animators to apply to the views
+returns a parcelable object containing the animationadapter's current dynamic state
+restores this animationadapter's state
+enables the drag and drop functionality for this { <p/> <b>note: this method can only be called on devices running ics (14) and above, otherwise an exception will be thrown
+disables the drag and drop functionality
+enables swipe to dismiss functionality for this { that is notified of dismissals
+enables swipe to dismiss with contextual undo for this { that is used
+enables swipe to dismiss with contextual undo for this { this method requires that a { it is allowed to have the {
+disables any swipe to dismiss functionality set by either { {
+sets the { if the drag and drop functionality is or will be enabled, the adapter should have stable ids, and should implement { and the adapter does not have stable ids
+sends a cancel event to given {
+inserts an item at given index
+inserts items, starting at given index
+inserts items at given indexes
+insert items at given indexes
+sets the { for determining whether an item should be dragged when the user issues a down { <p/> this method does nothing if the drag and drop functionality is not enabled
+sets the { that is notified when user has dropped a dragging item
+starts dragging the item at given position
+sets the scroll speed when dragging an item
+sets the { <p/> this method does nothing if no swipe functionality is enabled
+flings the { calling this method has the same effect as manually swiping an item off the screen
